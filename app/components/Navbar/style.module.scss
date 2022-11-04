@@ -1,0 +1,17 @@
+.background {
+  background-color: rgb(161, 154, 154);
+  height: 7vh;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80vw;
+
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}

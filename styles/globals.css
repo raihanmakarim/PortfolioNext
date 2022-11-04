@@ -1,3 +1,8 @@
+:root {
+  --base-duration: 500ms;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +20,11 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light dark;
   }
   body {
     color: white;
-    background: black;
   }
-}
+} */

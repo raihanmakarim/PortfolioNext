@@ -1,0 +1,43 @@
+.background {
+  flex: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  --x: 3;
+  --y: 3;
+  --d: 50;
+
+  &:hover .image {
+    transform: scale(1.025)
+      translate(
+        calc(var(--x) / var(--d) * 1px),
+        calc(var(--y) / var(--d) * 1px)
+      );
+  }
+}
+
+.image {
+  --d: 20;
+
+  transform: translate(
+    calc(var(--x) / var(--d) * 1px),
+    calc(var(--y) / var(--d) * 1px)
+  );
+}
+
+.content {
+  --d: 60;
+
+  transform: translate(
+    calc(var(--x) / var(--d) * -1px),
+    calc(var(--y) / var(--d) * -1px)
+  );
+}
